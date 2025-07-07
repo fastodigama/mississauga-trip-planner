@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+}
+:root {
+  --text: #3D365C;
+  --light-text: #fff;
+  --secondary: #7C4585;
+  --accent: #C95792;
+  --accent-light: rgba(204, 63, 30, 0.2);
+  --light: #e0fbfc;
+  --light-alt: #e5e6e8;;
+}
+
+body{
+    margin: 0;
+    font: 300 1.2em 'Urbanist', sans-serif;
+    background: var(--light-alt);
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+h1{
+  border-bottom: 3px solid var(--accent);
+}
+
+h2{
+  border-bottom: 1px solid var(--accent);
+  margin: 1rem;
+}
+h3 {
+  border-left:2px solid var(--accent);
+}
+
+a:link, a:visited{
+  color: var(--accent);
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.botton{
+  font-family: inherit;
+  background: var(--accent);
+  color: var(--light-text);
+  font-weight: 900;
+  display: inline-block;
+  text-align: center;
+  padding:  0.5em 0.8em;
+  font-size: 0.9em;
+  border: none;
+}
+
+#header{
+  background: var(--text);
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#header a:link,
+#header a:visited {
+  color: var(--light-text);
+  text-decoration: none;
+}
+#header a:hover{
+  color: var(--accent);
+}
+
+#site-name a:link{
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.inline-menu{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em 2em;
+  gap: 1em;
+  list-style: none;
+ 
+}
+
+#main-content {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em 2em;
+  gap: 1em;
+}
+
+
+
+td{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.trip-info-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.trip-table{
+  flex: 1 1 50%;
+  max-width: 50%;
+  overflow-x: auto;
+  margin: 0.5rem;
+}
+
+#map{
+  flex: 1 1 50%;
+  max-width: 50%;
+  height: 400px;
+  margin: 1rem;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .trip-info-container {
+    flex-wrap: nowrap;
+  }
+}
