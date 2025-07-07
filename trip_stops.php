@@ -63,7 +63,7 @@ $stops = getTripStops($connect, $trip_id);
                 <tbody>
                     <?php
                     // Reset pointer and loop through the stop results
-                    mysqli_data_seek($stops, 0);
+                    //mysqli_data_seek($stops, 0);
                     while ($row = mysqli_fetch_assoc($stops)) :
                     ?>
                         <tr>
@@ -86,7 +86,7 @@ $stops = getTripStops($connect, $trip_id);
 
             <!-- Leaflet JS for map functionality -->
             <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-            
+
             <!-- Leaflet JS (Source: https://leafletjs.com - CDN from unpkg) -->
             <script>
                 var stops = [
