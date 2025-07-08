@@ -66,6 +66,8 @@ $route = getRouteInfo($connect, $route_id);
                     </tr>
                 </thead>
                 <tbody>
+                    <!--  Loop through each row (trip) returned from the database query
+                     mysqli_fetch_assoc() fetches one associative array (one trip) at a time -->
                     <?php while ($row = mysqli_fetch_assoc($trips)) : ?>
                     <tr>
                          <!-- Display trip information -->
